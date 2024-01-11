@@ -2,7 +2,7 @@ import Image from 'next/image'
 import chess from '../public/chessclub.jpg'
 import chessWinner from '../public/chess-winner.jpg'
 import chessAllAges from '../public/chess-all-ages.jpg'
-import chessBoard from '../public/chessboard.jpg'
+import meAtChessClub from '../public/meAtChessClub.jpg'
 
 import {
   Carousel,
@@ -17,10 +17,8 @@ export default function Home() {
 <main className="flex min-h-screen flex-col items-center justify-between p-24">
 <Carousel
 opts={{
-  align: "center",
   loop: true,
   active: true,
-  
   }}>
 <CarouselPrevious/>
 <CarouselContent>
@@ -32,6 +30,9 @@ opts={{
 </CarouselItem>
 <CarouselItem className='flex justify-center'>
 <Image src={chessAllAges} height={850} alt='something spicy' />
+</CarouselItem>
+<CarouselItem className='flex justify-center'>
+<Image src={meAtChessClub} height={850} alt='something spicy' />
 </CarouselItem>
 </CarouselContent>
 <CarouselNext/>
